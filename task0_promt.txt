@@ -1,0 +1,17 @@
+Act as an expert Python developer specialized in physics simulations and 3D graphics. Your goal is to implement "Task 0" of my assignment.
+
+### ASSIGNMENT DESCRIPTION (TASK 0):
+"Implement a 3d particle simulation inside of a cube. The number of particles inside of the cube should be controllable interactively via a slider. Initially, particles (represented as small 3d spheres) will be scattered randomly inside the cube. Their initial velocity vectors will be set up randomly as well.
+Collisions between particles and with the inside walls of the cube need to be handled.
+We consider the cube as being split into n * n smaller subcubes. The purpose is to compute the entropy of each of the subcubes using either the Boltzmann or Shannon techniques or both and to use a colour spectrum to depict each subcube's entropy in real time."
+
+### TECHNICAL CONSTRAINTS & REQUIREMENTS:
+1. Language & Libraries: Use Python. Strictly use `vpython` for the 3D rendering, the interactive UI slider, and the main simulation loop. Use `numpy` for efficient vector math (positions, velocities).
+2. Physics: Implement basic elastic collisions for particle-wall and particle-particle interactions.
+3. Subcubes & Entropy:
+   - Logically divide the main bounding cube into a grid of smaller subcubes (e.g., 3x3x3).
+   - In the update loop, track which particles are in which subcube.
+   - Calculate the entropy (choose either Boltzmann or Shannon based on particle speed or density state) for each subcube.
+4. Visuals: Render a visual indicator for the subcubes (e.g., semi-transparent boxes or grid lines) and dynamically update their color in real-time based on the computed entropy value using a color gradient (e.g., blue for low entropy, red for high entropy).
+
+Please provide the complete, runnable Python code for this simulation.
